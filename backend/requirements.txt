@@ -1,7 +1,7 @@
-fastapi
-uvicorn
-python-multipart
-joblib
+streamlit
+pandas
 numpy
+scikit-learn
 xgboost
+joblib
 shap
