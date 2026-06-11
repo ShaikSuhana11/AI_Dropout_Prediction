@@ -70,7 +70,7 @@ const [simLoading, setSimLoading] = useState(false);
      ========================= */
   const fetchShapExplanation = async () => {
     try {
-      const res = await fetch("http://localhost:8000/shap", {
+      const res = await fetch("http://ai-dropout-backend.onrender.com/shap", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(student),
@@ -87,7 +87,7 @@ const runSimulation = async () => {
   setSimLoading(true);
 
   try {
-    const res = await fetch("http://localhost:8000/simulate", {
+    const res = await fetch("http://ai-dropout-backend.onrender.com/simulate", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -411,7 +411,7 @@ const runSimulation = async () => {
 //      ========================= */
 //   const fetchShapExplanation = async () => {
 //     try {
-//       const res = await fetch("http://localhost:8000/shap", {
+//       const res = await fetch("http://ai-dropout-backend.onrender.com/shap", {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify(student),
@@ -431,7 +431,7 @@ const runSimulation = async () => {
 //     setSimLoading(true);
 
 //     try {
-//       const res = await fetch("http://localhost:8000/simulate", {
+//       const res = await fetch("http://ai-dropout-backend.onrender.com/simulate", {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify({
@@ -460,7 +460,7 @@ const runSimulation = async () => {
 //     setReviewLoading(true);
 
 //     try {
-//       const res = await fetch("http://localhost:8000/academic-review", {
+//       const res = await fetch("http://ai-dropout-backend.onrender.com/academic-review", {
 //         method: "POST",
 //         headers: { "Content-Type": "application/json" },
 //         body: JSON.stringify({ email: student.email }),
